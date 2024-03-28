@@ -3,20 +3,20 @@ import React from 'react'
 
 import { Ionicons } from '@expo/vector-icons';
 import Colors from '../../constants/colors';
+import AvatarImage from '../../../assets/mert.jpeg.jpg';
 
-const Profile = () =>
-{
+const Profile = () => {
     return (
         <View style={styles.container}>
             <View style={styles.col1}>
                 <Image
                     style={styles.avatar}
-                    source={{ uri: 'https://pbs.twimg.com/profile_images/1454559498971058177/tC-prr3a_200x200.jpg' }} />
+                    source={AvatarImage} />
             </View>
             <View style={styles.col2}>
                 <View>
                     <Text style={[styles.text, styles.weight]}>Hoş geldiniz!</Text>
-                    <Text style={styles.text}>Zafer Cömert</Text>
+                    <Text style={styles.text}>Mert Gülle</Text>
                 </View>
             </View>
             <View style={styles.col3}>
